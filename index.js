@@ -11,11 +11,11 @@ function summonCaptainPlanet(planeteerCalls) {
 
   var planeteerList = [];
   for (var i = 0; i < planeteerCalls.length; i++) {
-    planeteerList.push(`${planeteerCalls[i]}! `)
+  	planeteerList.push(`${planeteerCalls[i]}! `)
   }
   var allCaps = planeteerList.map(function(item){
     return item.toUpperCase();
-  })
+});
   return allCaps;
 }
 
@@ -33,7 +33,7 @@ function longPlaneteerCalls(words) {
 function findTheCheese (foods) {
   for (var i = 0; i < foods.length; i++)
   if (foods[i] === "cheddar" || foods[i] === "gouda") {
-    return foods[i]
+    return foods[i];
   }
-  return "no cheese!"
+  return "no cheese!";
 }
