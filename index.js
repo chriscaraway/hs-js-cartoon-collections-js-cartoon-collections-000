@@ -7,6 +7,17 @@ function dwarfRollCall(dwarves) {
 	}
 }
 
+//or
+
+function dwarfRollCall(dwarves) {
+  var arrayDwarves = [];
+  for (var i = 0; i < dwarves.length; i++) {
+    arrayDwarves.push((i+1) + '. ' + dwarves[i] + " ");
+  };
+  return arrayDwarves.join('');
+};
+
+
 function summonCaptainPlanet(planeteerCalls) {
 
   var planeteerList = [];
